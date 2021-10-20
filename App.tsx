@@ -37,27 +37,31 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Camera
-        style={styles.camera}
-        type={Camera.Constants.Type.back}
         ref={camera}
+        style={styles.camera}
+        flashMode={Camera.Constants.AutoFocus.auto}
+        type={Camera.Constants.Type.back}
         onCameraReady={() => setIsCameraReady(true)}
+        videoStabilizationMode={Camera.Constants.VideoStabilization.auto}
       >
-        <View style={styles.buttonContainer}>
-          {isCameraReady && <TouchableOpacity
-            style={styles.shutter}
-            onPress={() => {
-              if (!camera.current) return;
-              camera.current.takePictureAsync({
-                quality: 1,
-                base64: false,
-                exif: false,
-                onPictureSaved: scan
-              });
-            }}
-          >
-            <Text style={styles.text}>scan</Text>
-          </TouchableOpacity>}
-        </View>
+        {isCameraReady && (
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity
+              style={styles.shutter}
+              onPress={() => {
+                if (!camera.current) return;
+                camera.current.takePictureAsync({
+                  quality: 1,
+                  base64: false,
+                  exif: false,
+                  onPictureSaved: scan
+                });
+              }}
+            >
+              <Text style={styles.text}>scan</Text>
+            </TouchableOpacity>
+          </View>
+        )}
       </Camera>
     </View>
   );
