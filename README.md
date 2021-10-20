@@ -8,6 +8,8 @@ This project uses [React Native](https://reactnative.dev/) together with [Expo](
 
 # Development
 
+This project requires that you have the latest versions of [Node.js](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Expo CLI](https://docs.expo.dev/workflow/expo-cli/) configured and installed globally.
+
 For first time setup install dependencies using yarn.
 
     yarn install
