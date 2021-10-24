@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Camera } from 'expo-camera';
+import MlkitOcr from 'react-native-mlkit-ocr';
 
 interface Photo {
   height: number,
@@ -24,8 +25,10 @@ export default function App() {
     })();
   }, []);
 
-  function scan(photo: Photo) {
+  async function scan(photo: Photo) {
     console.log(photo);
+    const resultFromUri = await MlkitOcr.detectFromUri(photo.uri);
+    console.log(resultFromUri);
   }
 
   if (isLoading) {
@@ -42,7 +45,6 @@ export default function App() {
         flashMode={Camera.Constants.AutoFocus.auto}
         type={Camera.Constants.Type.back}
         onCameraReady={() => setIsCameraReady(true)}
-        videoStabilizationMode={Camera.Constants.VideoStabilization.auto}
       >
         {isCameraReady && (
           <View style={styles.buttonContainer}>
@@ -51,9 +53,9 @@ export default function App() {
               onPress={() => {
                 if (!camera.current) return;
                 camera.current.takePictureAsync({
-                  quality: 1,
+                  quality: .5,
                   base64: false,
-                  exif: false,
+                  exif: true,
                   onPictureSaved: scan
                 });
               }}
