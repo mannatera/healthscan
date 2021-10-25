@@ -1,0 +1,68 @@
+[
+  {
+    "id": "E171",
+    "names": ["titaandioksiid"],
+    "desc": "Toiduvärv, mis annab tootele omase värvuse ning hoiab ära võimaliku värvuse kao valguse, temperatuuri ja õhu mõjul. Tegemist on puu- ja köögiviljadest saadud ekstraktiga",
+    "notes": "Uuringud näitavad, et E171 ehk titaandioksiid on ainuüksi loomkatsetes sissehingamisel tekitanud kopsuvähki. Inimeste puhul on tõendatud, et see aine kipub ladestuma organitesse, on meie soolestiku mikrobioomi kahjustav, seda seostatakse võimalike geneetiliste kahjustuste ja vähiriskiga. Sealhulgas peetakse seda ainet immunotoksiliseks ja neurotoksiiniks põhjustades organismis põletikku. Titaandioksiid on tiht saastunud elavhõbeda, plii ja arseeniga, mis kuuluvad kahjulikumate raskemetallide hulka, leides sellisel viisil tee kehasse."
+  },
+  {
+    "id": "E621",
+    "names": ["naatriumvesinikglutamaat"],
+    "desc": "Tugevdab toidule omast lõhna ja maitset.",
+    "notes": "Tarbimine toob täiskasvanutel esile kõrvalmõjusid, sh südame pekslemist, pea-, liigese- ja lihasvalusid, astmat ja allergilisi reaktsioone, mida tuntakse ka Hiina restorani sündroomi nime all."
+  },
+  {
+    "id": "E211",
+    "names": ["naatriumbensoaat"],
+    "desc": "Kasutatakse säilitusainena, mis pärsib jookides pärmi ja bakterite kasvu.",
+    "notes": "Ei tohi tarbida koos rohke C-vitamiiniga, sest siit moodustub kantserogeenne kooslus benseen, mida seostatakse vähi ja kasvajate tekkimisega."
+  },
+  {
+    "id": "E951",
+    "names": ["aspartaam"],
+    "desc": "Aine annab joogile magusa maitse ilma joogi energiaväärtust tõstmata.",
+    "notes": "Aspartaami kuumutamine põhjustab formaldehüüdide akumuleerumist. Formaaldehüüdid on kantserogeensed ja võivad põhjustada sissejoomisel ja sissehingamisel kõri, nina- ja verevähki."
+  },
+  {
+    "id": "E950",
+    "names": ["atsesulfaamkaalium"],
+    "desc": "Aine annab joogile magusa maitse ilma joogi energiaväärtust tõstmata.",
+    "notes": "Vähe uuritud magusaine."
+  },
+  {
+    "id": "E320",
+    "names": ["butüülitud hüdroksüanisool", "bha"],
+    "desc": "Säilitusaine. Toidu antioksüdandina võib see takistada rasvaste toitude oksüdeerumist ja lükata aega, mil toit hakkab halvenema. Selle maksimaalne kasutamine toidus ei tohiks rasva alusel ületada 0,2g/kg",
+    "notes": "Hiirtel ja rottidel on suuremas koguses tarbides tekitanud vähki ning aine on loomkatsetes põhjustanud geneetilisi muutusi munasarjades."
+  },
+  {
+    "id": "E310",
+    "names": ["propüülgallaat"],
+    "desc": "Säilitusaine. Toidu antioksüdandina võib see takistada rasvaste toitude oksüdeerumist ja lükata aega, mil toit hakkab halvenema. Selle maksimaalne kasutamine toidus ei tohiks rasva alusel ületada 0,2g/kg",
+    "notes": "On põhjustanud inimestel nõgeslöövet ja hingamisteede häireid (eriti ohtlik astmaatikutele). Loomkatsetes on tõestatud, et see säilitusaine alandab viljastumisprotsenti ja lisab vastsündinute surmajuhtumeid."
+  },
+  {
+    "id": "E319",
+    "names": ["tert-butüülhüdrokinoon", "tert-butylhydroquinone", "tbhq"],
+    "desc": "TBHQ is a preservative that is pervasive in processed foods.",
+    "notes": "TBHQ, has been found to harm the immune system both in animal tests and in non-animal tests known as high-throughput in vitro toxicology testing."
+  },
+  {
+    "id": "E250",
+    "names": ["naatriumnitrit"],
+    "desc": "Naatriumnitrit on säilitusaine, mis pikendab toote säilivust ja stabiliseerib värvi ning pärsib ohtlike bakterite kasvu.",
+    "notes": ""
+  },
+  {
+    "id": "E251",
+    "names": ["naatriumnitraat", "nitraat"],
+    "desc": "",
+    "notes": "Nitraat ise on inimorganismile suhteliselt vähe toksiline aine, kuid see tekitab organismis ühended nagu nitritid, lämmastikoksiid ja N-nitrosoühendid, mis omavad organismile teatud kogusest alates negatiivset mõju. Neid on seostatud näiteks vere hapniku transpordivõime vähenemisega ja vähi tekkega."
+  },
+  {
+    "id": "E252",
+    "names": ["kaaliumnitraat", "nitraat"],
+    "desc": "",
+    "notes": "Nitraat ise on inimorganismile suhteliselt vähe toksiline aine, kuid see tekitab organismis ühended nagu nitritid, lämmastikoksiid ja N-nitrosoühendid, mis omavad organismile teatud kogusest alates negatiivset mõju. Neid on seostatud näiteks vere hapniku transpordivõime vähenemisega ja vähi tekkega."
+  }
+]

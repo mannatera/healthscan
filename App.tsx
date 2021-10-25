@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Camera } from 'expo-camera';
 import MlkitOcr from 'react-native-mlkit-ocr';
+import exampleResult from './result_example.json';
+import db from './db.json';
 
 interface Photo {
   height: number,
@@ -9,6 +11,13 @@ interface Photo {
   uri: string,
   exif?: Object,
   base64?: string
+}
+
+interface TextBlock {
+  bounding: Object,
+  cornerPoints: Array<Object>,
+  lines: Array<Object>,
+  text: string
 }
 
 export default function App() {
@@ -27,8 +36,19 @@ export default function App() {
 
   async function scan(photo: Photo) {
     console.log(photo);
-    const resultFromUri = await MlkitOcr.detectFromUri(photo.uri);
-    console.log(resultFromUri);
+    const result = await MlkitOcr.detectFromUri(photo.uri);
+    const text = getText(result);
+    console.log(text);
+  }
+
+  function getText(result: Array<TextBlock>): string {
+    let text: string = '';
+    var i = 0, len = result.length;
+    while (i < len) {
+        text += result[i].text + ' ';
+        i++
+    }
+    return text;
   }
 
   if (isLoading) {
@@ -51,11 +71,14 @@ export default function App() {
             <TouchableOpacity
               style={styles.shutter}
               onPress={() => {
+                const text = getText(exampleResult);
+                console.log(text);
+                return;
                 if (!camera.current) return;
                 camera.current.takePictureAsync({
-                  quality: .5,
+                  quality: 1,
                   base64: false,
-                  exif: true,
+                  exif: false,
                   onPictureSaved: scan
                 });
               }}
